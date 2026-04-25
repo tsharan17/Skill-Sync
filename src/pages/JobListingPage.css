@@ -1,0 +1,112 @@
+.jobs-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.jobs-search {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s;
+}
+.jobs-search:focus { border-color: var(--accent); }
+
+.filter-pills { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.filter-pill {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 13px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.filter-pill:hover { border-color: var(--accent); color: var(--accent); }
+.filter-pill.active { background: var(--accent-dim); border-color: var(--accent); color: var(--accent); }
+
+.job-list { display: flex; flex-direction: column; gap: 14px; }
+
+.job-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+  transition: border-color 0.2s;
+}
+.job-card:hover { border-color: var(--accent); }
+
+.job-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  gap: 12px;
+}
+
+.job-title {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.job-meta { font-size: 13px; color: var(--text-muted); }
+
+.job-salary {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  white-space: nowrap;
+  background: var(--accent-dim);
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.job-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.job-skills { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+
+.job-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.job-posted { font-size: 12px; color: var(--text-muted); }
+
+/* ── New additions for updated JobListingPage ── */
+.inline-score {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.quick-match {
+  font-size: 11px;
+  color: var(--accent);
+  background: var(--accent-dim);
+  border: 1px solid rgba(79,255,176,0.2);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.tag-matched {
+  background: rgba(79,255,176,0.2) !important;
+  border-color: rgba(79,255,176,0.5) !important;
+}
