@@ -35,7 +35,7 @@ import {
 
 // ── Replace with your real Firebase config ──────────────
 const firebaseConfig = {
-  apiKey: "AIzaSyD1hX_2bGHOGOb3LUe-Y-F9qQTGChxT0oQ",
+  apiKey: "",
   authDomain: "skill-sync-1f6aa.firebaseapp.com",
   projectId: "skill-sync-1f6aa",
   storageBucket: "skill-sync-1f6aa.firebasestorage.app",
